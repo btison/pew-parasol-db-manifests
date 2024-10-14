@@ -13,7 +13,7 @@ spec:
   source:
     repoURL: {{ parasol_db_repo_url }}
     targetRevision: {{ parasol_db_repo_revision }}
-    path: ./helm/parasol-store
+    path: ./app/helm/parasol-db
     helm:
       valuesFiles:
         ./values/values-dev.yaml

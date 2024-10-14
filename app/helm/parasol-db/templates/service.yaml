@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "parasol-db.name" . }}
+  labels:
+    {{- include "parasol-db.labels" . | nindent 4 }}
+spec:
+  ports:
+    - name: {{ .Values.service.portName }}
+      protocol: TCP
+      port: {{ .Values.service.port }}
+      targetPort: {{ .Values.service.containerPort }}
+  selector:
+    {{- include "parasol-db.selectorLabels" . | nindent 4 }}

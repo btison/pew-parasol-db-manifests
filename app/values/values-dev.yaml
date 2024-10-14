@@ -1,0 +1,14 @@
+image:
+  repository: quay.io/redhat_pe_workshop/parasol-store-db
+  pullPolicy: IfNotPresent
+  tag: "latest"
+
+pgsql:
+  user: globex
+  password: globex
+  database: globex
+  adminPassword: 
+  debeziumPassword: debezium
+
+persistence:
+  mode: ephemeral

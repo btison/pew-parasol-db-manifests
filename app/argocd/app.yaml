@@ -16,7 +16,7 @@ spec:
     path: ./app/helm/parasol-db
     helm:
       valuesFiles:
-        ./values/values-dev.yaml
+        ./values/values-staging.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: {{ parasol_db_namespace }}

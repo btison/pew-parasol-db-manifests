@@ -2,7 +2,7 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: {{ parasol_db_argocd_name }}
+  name: {{ parasol_db_argocd_name }}-dev
   namespace: {{ parasol_db_argocd_namespace }}
   labels:
     rht-gitops.com/argocd: {{ parasol_db_argocd_name }}

@@ -15,8 +15,8 @@ spec:
     targetRevision: {{ parasol_db_repo_revision }}
     path: ./app/helm/parasol-db
     helm:
-      valuesFiles:
-        ./values/values-prod.yaml
+      valueFiles:
+        - ../../values/values-prod.yaml
   destination:
     server: https://kubernetes.default.svc
     namespace: {{ parasol_db_namespace }}

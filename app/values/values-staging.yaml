@@ -4,9 +4,9 @@ image:
   tag: "latest"
 
 pgsql:
-  user: globex
-  password: globex
-  database: globex
+  user: parasol
+  password: parasol
+  database: parasol
   adminPassword: 
   debeziumPassword: debezium
 
